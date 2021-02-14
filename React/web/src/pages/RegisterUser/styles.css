@@ -1,0 +1,21 @@
+div.div-reg-user-info div.input-reg-user-id {
+    width: 100px;
+}
+
+@media (min-width: 400px) {
+    div.div-reg-user-info {
+        display: flex;
+    }
+
+    div.div-reg-user-info div.input-reg-user-id {
+        flex-basis: 100px;
+        flex-shrink: 0;     
+    
+        margin-right: 16px;
+    }
+    
+    div.div-reg-user-info div.input-reg-user-name {
+        flex-grow: 1;
+    }
+}
+

@@ -1,0 +1,67 @@
+div.container-user div.card-user {
+    height: 64px;
+    border-left: 10px solid greenyellow;
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+
+    display: grid;
+    grid-template:
+        "id btn" 31px
+        "email btn" 31px
+        / 75% 25%
+    ;
+}
+
+div.container-user div.card-user p {
+    margin: 0;
+    margin-left: 8px;
+}
+
+.user-id {
+    grid-area: id;
+    align-self: center;
+}
+
+.user-email {
+    grid-area: email;
+    align-self: center;
+}
+
+div.user-div-btn {
+    grid-area: btn;
+}
+
+div.user-div-btn .btn-card-user {
+    border: none;
+    padding: 6px;
+}
+
+div.user-div-btn .btn-edit-card-user {
+    border-radius: 0;
+}
+
+div.user-div-btn .btn-remove-card-user {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+button.btn-create-user {
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 700px)
+{
+    div.container-user div.card-user {
+        grid-template:
+            "id btn" 31px
+            "email btn" 31px
+            / 90% 10%
+        ;
+    }
+
+    div.user-div-btn .btn-card-user {
+        border: none;
+        padding: 6px 12px;
+    }
+}
