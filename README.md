@@ -1,5 +1,5 @@
 # crud-users
-Projeto  feito em node.js e react js
+Projeto de CRUD de usuários feito em node.js e react js.
 
 Para testar a aplicação é necessário executar os comandos do arquivo 'scripts.sql' dentro do postgres.
 
